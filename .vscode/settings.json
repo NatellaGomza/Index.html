@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/16b809d5-694a-4559-9fad-74f5238316cc/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/PuzzleLand",
+    "appService.deploySubpath": "."
+}

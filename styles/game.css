@@ -1,0 +1,163 @@
+.container {
+    height: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#header_score {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100%;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#canvas {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+#score, #timer, #changeLevel, #changePlayer {
+    width: 23%;
+    text-align: center;
+    border: 5px solid rgb(253, 176, 9);
+    background-color: rgb(255, 211, 66);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    color: rgba(96, 159, 133);
+}
+
+#changeLevel:hover, #changePlayer:hover {
+    cursor:pointer;
+}
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(10, 10, 10, .7);
+    display: none;
+    color: rgb(51, 159, 114, 1);
+}
+
+#results {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    border: 10px solid rgb(253, 176, 9);
+    background-color: rgb(255, 211, 66);
+    font-size: 4vw;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+#results span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #e10437;
+    font-size: 2vw;
+    cursor:pointer;
+}
+
+#results img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4vw;
+    height: 4vw;
+}
+
+#results::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#results::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(255, 211, 66);
+}
+
+#results::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #F90;
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, .2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .2) 50%,
+            rgba(255, 255, 255, .2) 75%,
+            transparent 75%,
+            transparent)
+}
+
+#table {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+tbody {
+    width: 90%;
+}
+
+.header {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+caption {
+    font-weight: bold;
+}
+
+.tablePlace {
+    width: 10%;
+}
+
+.tableName {
+    width: 20%;
+}
+
+.tableSpendTime {
+    width: 20%;
+}
+
+.tableMoves {
+    width: 10%;
+}
+
+.tableDate {
+    width: 40%;
+}
+
+td {
+    font-size: 2vw;
+    width: 20%;
+    border: 1px solid black;
+}
+
+tr:first-child {
+    width: 3vw;
+}
+
+#modal #main_header {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
