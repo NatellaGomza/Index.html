@@ -70,13 +70,15 @@ body {
 }
 
 #sendButton {
-    margin: 20px 0px;
-    width: 15vw;
+    margin: 0 auto;
+    width: 35%;
+    height: 4vmin;
     border-radius: 10px;
     border-color: rgb(255, 211, 66);
     background-color: white;
-    font-size: 20px;
-    color: rgb(70, 145, 88)
+    font-size: 3vmin;
+    color: rgb(70, 145, 88);
+    margin-bottom: 5vmin;
 }
 
 #selectionTable {
