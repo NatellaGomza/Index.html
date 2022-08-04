@@ -260,13 +260,21 @@
     }
 
     buildingCells() {
+      if (window.screen.width > 1200) {
+        this.canvas.width = Math.floor(window.innerWidth * 0.95);
+      } else if (window.screen.width <= 1200) {
+        this.canvas.width = Math.floor(window.screen.width * 0.85);
+      };
+      if (window.screen.height > 600) {
+        this.canvas.height = Math.floor(window.innerHeight * 0.85);
+      } else if (window.screen.height <= 600) {
+        this.canvas.height = Math.floor(window.screen.height * 0.85);
+      };
 
-      this.canvas.width = Math.floor(window.innerWidth * 0.95);
-      this.canvas.height = Math.floor(window.innerHeight * 0.85);
       this.sizeOfField = Math.floor(this.canvas.width * 0.4);
       this.startPointXLeft = Math.floor(this.canvas.width * 0.05);
       this.startPointXRight = Math.floor(this.canvas.width * 0.55);
-      this.startPointY = Math.floor(this.canvas.width * 0.05);
+      this.startPointY = Math.floor((this.canvas.height - this.sizeOfField) / 2);
       this.sizeOfCell = this.sizeOfField / this.ammount;
 
       let k = 0;
