@@ -20,11 +20,16 @@ body {
 }
 
 #login {
-    width: 50%;
+    width: 50vmin;
     margin: 30px auto;
     border: 10px solid rgb(253, 176, 9);
     background-color: rgb(255, 211, 66);
     border-radius: 10%;
+    min-height: 50vmin;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-around;
 }
 
 #login h1 {
