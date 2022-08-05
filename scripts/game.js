@@ -582,7 +582,7 @@
       for (let j = 0; j < playingField.arrayLeft.length; j++) {
         let b = playingField.arrayLeft[j];
         let a = playingField.arrayRight[playingField.arrayRight.length - 1];
-        let audio = new Audio('../sounds/mouseUp.mp3');
+        let audio = new Audio('sounds/mouseUp.mp3');
         let rightBorder = playingField.arrayLeft[playingField.arrayLeft.length - 1].x + playingField.arrayLeft[playingField.arrayLeft.length - 1].s;
         let bottomBorder = playingField.arrayLeft[playingField.arrayLeft.length - 1].y + playingField.arrayLeft[playingField.arrayLeft.length - 1].s;
         if (mouseX > b.x && mouseX < b.x + b.s && mouseY > b.y && mouseY < b.y + b.s && b.isEmpty && this.puzzleActive) {
