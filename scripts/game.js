@@ -83,7 +83,7 @@
         setTimeout(() => window.cancelAnimationFrame(playingField.anim), 3000);
         this.setUserResult();
         this.saveWinner();
-        let audio = new Audio('../sounds/congratulations.mp3');
+        let audio = new Audio('sounds/congratulations.mp3');
         audio.play();
       }
     }
