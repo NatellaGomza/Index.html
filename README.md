@@ -1,2 +1,2 @@
-# Web game which is writing on JS Canvas.
+# Web game which was written on JS Canvas.
 Deployment https://natellagomza.github.io/Puzzleland/
